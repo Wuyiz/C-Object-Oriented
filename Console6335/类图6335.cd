@@ -1,25 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="Console6335.Program">
-    <Position X="0.5" Y="0.5" Width="2.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
-      <FileName>Program.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="Console6335.ArrayDemo6335">
-    <Position X="3.5" Y="0.5" Width="3" />
+    <Position X="3.25" Y="0.75" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ArrayDemo6335.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Console6335.Menu6335">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Menu6335.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Class Name="Console6335.ParseDemo6335">
-    <Position X="7" Y="0.5" Width="3" />
+    <Position X="6.25" Y="0.75" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
       <FileName>ParseDemo6335.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Font Name="微软雅黑" Size="9" />
+  <Class Name="Console6335.Program">
+    <Position X="3.25" Y="2.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
 </ClassDiagram>

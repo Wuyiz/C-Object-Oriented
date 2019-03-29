@@ -18,7 +18,7 @@ namespace Console6335
             jin = g/500;
             Console.WriteLine("{0}kg等于{1}斤",kg,jin);
             Console.WriteLine("{0}kg等于{1}公斤", kg, kg);
-            Console.ReadKey();
+            //Console.ReadKey();
         }
 
         public static void Parse2_6335()
@@ -34,7 +34,7 @@ namespace Console6335
             {
                 Console.WriteLine("{0}年是平年\n",Year);
             }
-            Console.ReadKey();
+            //Console.ReadKey();
         }
     }
 }
