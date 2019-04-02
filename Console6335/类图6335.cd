@@ -28,5 +28,12 @@
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Console6335.Hotel">
+    <Position X="6.25" Y="2.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAIAgAAAAAAIEAAAAAAAAAAAEEABAAAAAA=</HashCode>
+      <FileName>Hotel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Microsoft YaHei UI" Size="9" />
 </ClassDiagram>
