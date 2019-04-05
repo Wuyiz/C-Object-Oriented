@@ -63,6 +63,12 @@
     <Compile Include="Win6335\BaseForm6335.Designer.cs">
       <DependentUpon>BaseForm6335.cs</DependentUpon>
     </Compile>
+    <Compile Include="Win6335\DateTimeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win6335\DateTimeForm.Designer.cs">
+      <DependentUpon>DateTimeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Win6335\ListForm6335.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </Compile>
     <EmbeddedResource Include="Win6335\BaseForm6335.resx">
       <DependentUpon>BaseForm6335.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win6335\DateTimeForm.resx">
+      <DependentUpon>DateTimeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Win6335\ListForm6335.resx">
       <DependentUpon>ListForm6335.cs</DependentUpon>
