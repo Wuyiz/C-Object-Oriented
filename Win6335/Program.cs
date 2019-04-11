@@ -15,7 +15,9 @@ namespace Win6335 {
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Win6335.BaseForm6335());
             //Application.Run(new Win6335.ListForm6335());
-            Application.Run(new Win6335.DateTimeForm());
+            //Application.Run(new Win6335.DateTimeForm());
+            //Application.Run(new Win6335.EditorForm6335());
+            Application.Run(new Win6335.MessageBoxForm6335());
         }
     }
 }
