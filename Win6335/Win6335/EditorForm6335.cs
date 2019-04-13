@@ -17,11 +17,6 @@ namespace Win6335.Win6335
             InitializeComponent();
         }
 
-        private void EditorForm6335_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             richTextBox1.Text = "";

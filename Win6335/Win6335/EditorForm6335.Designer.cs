@@ -42,9 +42,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(85, 82);
+            this.button1.Location = new System.Drawing.Point(113, 102);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 29);
             this.button1.TabIndex = 0;
             this.button1.Text = "新建";
             this.button1.UseVisualStyleBackColor = true;
@@ -52,9 +53,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(85, 139);
+            this.button2.Location = new System.Drawing.Point(113, 174);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(100, 29);
             this.button2.TabIndex = 1;
             this.button2.Text = "打开";
             this.button2.UseVisualStyleBackColor = true;
@@ -62,9 +64,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(85, 199);
+            this.button3.Location = new System.Drawing.Point(113, 249);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(100, 29);
             this.button3.TabIndex = 2;
             this.button3.Text = "保存";
             this.button3.UseVisualStyleBackColor = true;
@@ -72,9 +75,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(85, 262);
+            this.button4.Location = new System.Drawing.Point(113, 328);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(100, 29);
             this.button4.TabIndex = 3;
             this.button4.Text = "字体";
             this.button4.UseVisualStyleBackColor = true;
@@ -82,9 +86,10 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(85, 324);
+            this.button5.Location = new System.Drawing.Point(113, 405);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.Size = new System.Drawing.Size(100, 29);
             this.button5.TabIndex = 4;
             this.button5.Text = "颜色";
             this.button5.UseVisualStyleBackColor = true;
@@ -92,9 +97,10 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(219, 82);
+            this.richTextBox1.Location = new System.Drawing.Point(292, 102);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(502, 265);
+            this.richTextBox1.Size = new System.Drawing.Size(668, 330);
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "";
             // 
@@ -104,19 +110,18 @@
             // 
             // EditorForm6335
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 562);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "EditorForm6335";
             this.Text = "简易文本编辑器6335";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
-            this.Load += new System.EventHandler(this.EditorForm6335_Load);
             this.ResumeLayout(false);
 
         }
