@@ -18,10 +18,10 @@ namespace Win6335 {
             //Application.Run(new Win6335.DateTimeForm());
             //Application.Run(new Win6335.EditorForm6335());
             //Application.Run(new Win6335.MessageBoxForm6335());
-            //Application.Run(new Win6335.ArrayForm());
+            Application.Run(new Win6335.ArrayForm());
             //Application.Run(new Win6335.CloseForm6335());
             //Application.Run(new Win6335.ControlsForm6335());
-            Application.Run(new MainForm6335());
+            //Application.Run(new MainForm6335());
         }
     }
 }
