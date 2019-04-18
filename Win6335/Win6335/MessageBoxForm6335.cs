@@ -25,19 +25,19 @@ namespace Win6335.Win6335
                 MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
             if (dr==DialogResult.Yes)
             {
-                MessageBox.Show("你选择的为“是”按钮", "系统提示 1");
+                MessageBox.Show("你选择的为“是”按钮", "吴沂章");
             }
             else if (dr == DialogResult.No)
             {
-                MessageBox.Show("你选择的为“否”按钮", "系统提示 2");
+                MessageBox.Show("你选择的为“否”按钮", "吴沂章");
             }
             else if (dr == DialogResult.Cancel)
             {
-                MessageBox.Show("你选择的为“取消”按钮", "系统提示 3");
+                MessageBox.Show("你选择的为“取消”按钮", "吴沂章");
             }
             else
             {
-                MessageBox.Show("你没有进行任何的操作！", "系统提示 4");
+                MessageBox.Show("你没有进行任何的操作！", "吴沂章");
             }
         }
     }
