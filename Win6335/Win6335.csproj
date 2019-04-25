@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GDI6335\CheckCodeForm6335.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GDI6335\CheckCodeForm6335.Designer.cs">
+      <DependentUpon>CheckCodeForm6335.cs</DependentUpon>
+    </Compile>
     <Compile Include="GDI6335\LineForm6335.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     <Compile Include="Win6335\MessageBoxForm6335.Designer.cs">
       <DependentUpon>MessageBoxForm6335.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GDI6335\CheckCodeForm6335.resx">
+      <DependentUpon>CheckCodeForm6335.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GDI6335\LineForm6335.resx">
       <DependentUpon>LineForm6335.cs</DependentUpon>
     </EmbeddedResource>

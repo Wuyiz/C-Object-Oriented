@@ -15,6 +15,11 @@ namespace mytools.tools {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnTrans_Click(object sender, EventArgs e) {
 
             string thunder = $@"{tbLink1.Text}".Replace("thunder://","");
@@ -26,11 +31,16 @@ namespace mytools.tools {
             tbLink2.Text = realAddress;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="link"></param>
+        /// <returns></returns>
         public static string DecodeBase64 (string link) {
             string realAddress = "";
-            byte[] bytes = Convert.FromBase64String(link);
 
             try {
+                byte[] bytes = Convert.FromBase64String(link);
                 realAddress = Encoding.Default.GetString(bytes);
 
             } catch (Exception) {
