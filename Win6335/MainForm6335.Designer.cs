@@ -35,9 +35,14 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -164,12 +169,58 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.button9);
+            this.groupBox3.Controls.Add(this.button10);
+            this.groupBox3.Controls.Add(this.button11);
+            this.groupBox3.Location = new System.Drawing.Point(69, 468);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(576, 123);
+            this.groupBox3.TabIndex = 12;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "实验三 Windows窗口综合应用";
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(45, 52);
+            this.button9.Margin = new System.Windows.Forms.Padding(5);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(123, 44);
+            this.button9.TabIndex = 1;
+            this.button9.Text = "坐标轴";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(411, 52);
+            this.button10.Margin = new System.Windows.Forms.Padding(5);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(120, 44);
+            this.button10.TabIndex = 3;
+            this.button10.Text = "三角形";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(227, 52);
+            this.button11.Margin = new System.Windows.Forms.Padding(5);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(123, 44);
+            this.button11.TabIndex = 2;
+            this.button11.Text = "饼图";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
             // MainForm6335
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 30F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1061, 511);
+            this.ClientSize = new System.Drawing.Size(1107, 627);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
@@ -180,6 +231,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -197,5 +249,9 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
     }
 }

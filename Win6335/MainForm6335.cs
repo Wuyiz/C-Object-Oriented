@@ -54,5 +54,20 @@ namespace Win6335 {
             Win6335.CloseForm6335 close = new Win6335.CloseForm6335();
             close.Show();
         }
+
+        private void button9_Click(object sender, EventArgs e) {
+            GDI6335.LineForm6335 line = new GDI6335.LineForm6335();
+            line.Show();
+        }
+
+        private void button11_Click(object sender, EventArgs e) {
+            GDI6335.PieForm6335 pie = new GDI6335.PieForm6335();
+            pie.Show();
+        }
+
+        private void button10_Click(object sender, EventArgs e) {
+            GDI6335.StarForm6335 star = new GDI6335.StarForm6335();
+            star.Show();
+        }
     }
 }
