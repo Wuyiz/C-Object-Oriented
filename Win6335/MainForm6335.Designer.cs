@@ -48,9 +48,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(670, 23);
+            this.pictureBox1.Location = new System.Drawing.Point(701, 47);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(358, 443);
+            this.pictureBox1.Size = new System.Drawing.Size(376, 489);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
@@ -199,7 +199,7 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(120, 44);
             this.button10.TabIndex = 3;
-            this.button10.Text = "三角形";
+            this.button10.Text = "五角星";
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
