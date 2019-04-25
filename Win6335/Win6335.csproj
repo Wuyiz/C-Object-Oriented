@@ -55,6 +55,18 @@
     <Compile Include="GDI6335\LineForm6335.Designer.cs">
       <DependentUpon>LineForm6335.cs</DependentUpon>
     </Compile>
+    <Compile Include="GDI6335\PieForm6335.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GDI6335\PieForm6335.Designer.cs">
+      <DependentUpon>PieForm6335.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GDI6335\StarForm6335.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GDI6335\StarForm6335.Designer.cs">
+      <DependentUpon>StarForm6335.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm6335.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +125,12 @@
     </Compile>
     <EmbeddedResource Include="GDI6335\LineForm6335.resx">
       <DependentUpon>LineForm6335.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GDI6335\PieForm6335.resx">
+      <DependentUpon>PieForm6335.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GDI6335\StarForm6335.resx">
+      <DependentUpon>StarForm6335.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm6335.resx">
       <DependentUpon>MainForm6335.cs</DependentUpon>

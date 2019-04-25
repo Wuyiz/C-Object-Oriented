@@ -24,7 +24,9 @@ namespace Win6335 {
             //Application.Run(new Win6335.ControlsForm6335());
             //Application.Run(new MainForm6335());
 
-            Application.Run(new GDI6335.LineForm6335());
+            //Application.Run(new GDI6335.LineForm6335());
+            //Application.Run(new GDI6335.PieForm6335());
+            Application.Run(new GDI6335.StarForm6335());
         }
     }
 }
