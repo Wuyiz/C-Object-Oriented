@@ -28,6 +28,7 @@ namespace Win6335 {
             //Application.Run(new GDI6335.PieForm6335());
             //Application.Run(new GDI6335.StarForm6335());
             //Application.Run(new GDI6335.CheckCodeForm6335());
+            //Application.Run(new GDI6335.SinxForm6335());
         }
     }
 }

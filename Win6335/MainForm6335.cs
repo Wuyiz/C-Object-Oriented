@@ -69,5 +69,15 @@ namespace Win6335 {
             GDI6335.StarForm6335 star = new GDI6335.StarForm6335();
             star.Show();
         }
+
+        private void button12_Click(object sender, EventArgs e) {
+            GDI6335.CheckCodeForm6335 checkCode = new GDI6335.CheckCodeForm6335();
+            checkCode.Show();
+        }
+
+        private void button13_Click(object sender, EventArgs e) {
+            GDI6335.SinxForm6335 sinx = new GDI6335.SinxForm6335();
+            sinx.Show();
+        }
     }
 }

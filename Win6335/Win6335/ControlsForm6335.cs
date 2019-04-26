@@ -44,7 +44,7 @@ namespace Win6335.Win6335 {
         private void button1_Click(object sender, EventArgs e) {
             lbInfo.Items.Clear();   //清空信息面板
             Boolean flag = true;    //bool=true时才能显示信息
-            if (idCount(mtbNum) != 6) {
+            if (mtbNum.Text.Length != 6) {
                 //判断学号规范性
                 MessageBox.Show("请输入6位学号！", "Error");
                 mtbNum.Focus();
