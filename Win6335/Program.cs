@@ -22,13 +22,15 @@ namespace Win6335 {
             //Application.Run(new Win6335.ArrayForm());
             //Application.Run(new Win6335.CloseForm6335());
             //Application.Run(new Win6335.ControlsForm6335());
-            Application.Run(new MainForm6335());
+            //Application.Run(new MainForm6335());
 
             //Application.Run(new GDI6335.LineForm6335());
             //Application.Run(new GDI6335.PieForm6335());
             //Application.Run(new GDI6335.StarForm6335());
             //Application.Run(new GDI6335.CheckCodeForm6335());
             //Application.Run(new GDI6335.SinxForm6335());
+
+            Application.Run(new OOP6335.BigNumForm6335());
         }
     }
 }

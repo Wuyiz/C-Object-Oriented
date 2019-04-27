@@ -85,6 +85,12 @@
     <Compile Include="MainForm6335.Designer.cs">
       <DependentUpon>MainForm6335.cs</DependentUpon>
     </Compile>
+    <Compile Include="OOP6335\BigNumForm6335.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OOP6335\BigNumForm6335.Designer.cs">
+      <DependentUpon>BigNumForm6335.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Win6335\ArrayForm.cs">
@@ -153,6 +159,9 @@
     <EmbeddedResource Include="MainForm6335.resx">
       <DependentUpon>MainForm6335.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OOP6335\BigNumForm6335.resx">
+      <DependentUpon>BigNumForm6335.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -198,6 +207,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Library6335\Library6335.csproj">
+      <Project>{00996002-f881-4b1f-84fc-7f542c161e12}</Project>
+      <Name>Library6335</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

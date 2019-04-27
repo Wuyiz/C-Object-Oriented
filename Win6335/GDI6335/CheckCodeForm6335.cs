@@ -23,10 +23,11 @@ namespace Win6335.GDI6335 {
             }
 
             //画验证码
+            int x = 0;
             for (int i = 0; i < 5; i++) {
                 Font f = new Font(font[r.Next(0, font.Length)], r.Next(30, 35), FontStyle.Regular);
                 Brush brush = new SolidBrush(color[r.Next(0, color.Length)]);
-                graphics.DrawString(str[i].ToString(), f, brush, new Point(35*(i+1)-20, btm.Height / 4));
+                graphics.DrawString(str[i].ToString(), f, brush, new Point(35 * (i + 1) - 20, btm.Height / 4));
             }
 
             //干扰线
@@ -36,7 +37,10 @@ namespace Win6335.GDI6335 {
             }
 
             //干扰点
-            for (int i = 0; i < 1000; i++) {
+            for (int i = 0; i < 250; i++) {
+                btm.SetPixel(r.Next(0, btm.Width), r.Next(0, btm.Height), color[r.Next(0, color.Length)]);
+                btm.SetPixel(r.Next(0, btm.Width), r.Next(0, btm.Height), color[r.Next(0, color.Length)]);
+                btm.SetPixel(r.Next(0, btm.Width), r.Next(0, btm.Height), color[r.Next(0, color.Length)]);
                 btm.SetPixel(r.Next(0, btm.Width), r.Next(0, btm.Height), color[r.Next(0, color.Length)]);
             }
             

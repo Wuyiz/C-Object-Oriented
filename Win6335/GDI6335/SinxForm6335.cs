@@ -28,8 +28,8 @@ namespace Win6335.GDI6335 {
             float x1 = (float)(0 * Math.PI * Zoom / 180 + center.X);
             float y1 = (float)(Math.Sin(0 * Math.PI / 180) * Zoom + center.Y);
 
-            //获取角值
-            for (int i = 1; i < 360 * 5; i++)
+            //获取绘制y轴的sinx值
+            for (int i = 1; i < 180 * 2 * 5; i++)
             {
                 float x2 = (float)(i * Math.PI * Zoom / 180 + center.X);
                 float y2 = (float)Math.Sin(i * Math.PI / 180) * (-1) * Zoom + center.Y;

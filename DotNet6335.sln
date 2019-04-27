@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Win6335", "Win6335\Win6335.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mytools", "mytools\mytools.csproj", "{CC8B22A7-D856-41C9-9C4D-40BD678CCE0D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library6335Tests", "Library6335Tests\Library6335Tests.csproj", "{EEDF6C73-6E6E-4FF7-9F79-5632E6A945E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library6335", "Library6335\Library6335.csproj", "{00996002-F881-4B1F-84FC-7F542C161E12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{CC8B22A7-D856-41C9-9C4D-40BD678CCE0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC8B22A7-D856-41C9-9C4D-40BD678CCE0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC8B22A7-D856-41C9-9C4D-40BD678CCE0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEDF6C73-6E6E-4FF7-9F79-5632E6A945E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEDF6C73-6E6E-4FF7-9F79-5632E6A945E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEDF6C73-6E6E-4FF7-9F79-5632E6A945E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEDF6C73-6E6E-4FF7-9F79-5632E6A945E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00996002-F881-4B1F-84FC-7F542C161E12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00996002-F881-4B1F-84FC-7F542C161E12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00996002-F881-4B1F-84FC-7F542C161E12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00996002-F881-4B1F-84FC-7F542C161E12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
