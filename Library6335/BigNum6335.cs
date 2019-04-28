@@ -6,6 +6,7 @@ namespace Library6335 {
     public class BigNum6335 {
         private string[] bits = { "分", "角", "元", "拾", "佰", "千", "万", "十万", "佰万", "仟万", "亿" };
         private string[] nums = { "零", "壹", "贰", "叁", "肆", "伍", "陆", "柒", "捌", "玖" };
+        private decimal v;
 
         public Color Color {
             get {
@@ -19,8 +20,12 @@ namespace Library6335 {
         public decimal Money { get; set; }
 
         public BigNum6335() {
-            Money = Math.Round(Money, 2, MidpointRounding.AwayFromZero);    //四舍五入
+            //Money = Math.Round(Money, 2, MidpointRounding.AwayFromZero);    //四舍五入
         }
+
+        //public BigNum6335(decimal money) {
+        //    Money = Math.Round(Money, 2, MidpointRounding.AwayFromZero);    //四舍五入
+        //}
 
         private string getIntString(string intString) {
             StringBuilder stringBuilder = new StringBuilder(intString);
