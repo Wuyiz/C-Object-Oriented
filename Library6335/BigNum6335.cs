@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Drawing;
+using System.Text;
+
 namespace Library6335 {
     public class BigNum6335 {
         private string[] bits = { "分", "角", "元", "拾", "佰", "千", "万", "十万", "佰万", "仟万", "亿" };
@@ -21,156 +23,59 @@ namespace Library6335 {
         }
 
         private string getIntString(string intString) {
-            char[] chArr = intString.ToCharArray();    //转换成字符数组
-            string strUpper = "";   //初始化大写金额
-            string strUnit = "";    //初始化金额单位
-            intString = ""; //初始化string
-            int iTemp = 1;  //位数
+            StringBuilder stringBuilder = new StringBuilder(intString);
 
-            if (chArr.Length == 1 && chArr[0]=='0') {
+            int iTemp = stringBuilder.Length;  //获取整数部分位数
+            intString = ""; //初始化string
+
+            //当输入数字的整数部分为0时，无大写内容
+            if (iTemp <= 1 && stringBuilder[0] == '0') {
                 return intString;
             }
 
-            while (iTemp <= chArr.Length) {
-                switch (chArr[chArr.Length - iTemp]) {
-                    case '0':
-                        strUpper = nums[0];
-                        break;
-                    case '1':
-                        strUpper = nums[1];
-                        break;
-                    case '2':
-                        strUpper = nums[2];
-                        break;
-                    case '3':
-                        strUpper = nums[3];
-                        break;
-                    case '4':
-                        strUpper = nums[4];
-                        break;
-                    case '5':
-                        strUpper = nums[5];
-                        break;
-                    case '6':
-                        strUpper = nums[6];
-                        break;
-                    case '7':
-                        strUpper = nums[7];
-                        break;
-                    case '8':
-                        strUpper = nums[8];
-                        break;
-                    case '9':
-                        strUpper = nums[9];
-                        break;
-                }
-                switch (iTemp) {
-                    case 1:
-                        strUnit = bits[iTemp + 1];
-                        break;
-                    case 2:
-                        strUnit = bits[iTemp + 1];
-                        break;
-                    case 3:
-                        strUnit = bits[iTemp + 1];
-                        break;
-                    case 4:
-                        strUnit = bits[iTemp + 1];
-                        break;
-                    case 5:
-                        strUnit = bits[iTemp + 1];
-                        break;
-                    case 6:
-                        strUnit = bits[iTemp + 1];
-                        break;
-                    case 7:
-                        strUnit = bits[iTemp + 1];
-                        break;
-                    case 8:
-                        strUnit = bits[iTemp + 1];
-                        break;
-                    case 9:
-                        strUnit = bits[iTemp + 1];
-                        break;
-                    default:
-                        strUnit = "";
-                        break;
-                }
-                iTemp++;
-                intString = strUpper + strUnit + intString;
+            //转换整数部分数字，i从位数开始
+            for (int i = iTemp; i > 0; i--) {
+                Int32 num = Convert.ToInt32(stringBuilder[iTemp - i].ToString());   //获取当前数字
+                stringBuilder.Append(nums[num]);    //追加大写数字
+                stringBuilder.Append(bits[i + 1]);  //追加金额单位
             }
+
+            stringBuilder.Remove(0,iTemp);  //移除原有的小写数字内容
+            intString = "" + stringBuilder;
+            
             return intString;
         }
 
         private string getDotString(string dotString) {
-            char[] chArr = dotString.ToCharArray();    //转化成字符数组
-            string strUpper = "";   //初始化大写金额
-            string strUnit = "";    //初始化金额单位
+            StringBuilder stringBuilder = new StringBuilder(dotString); 
+            
             dotString = ""; //初始化string
-            int iTemp = 1;  //位数
 
-            while (iTemp <= chArr.Length) {
-                switch (chArr[iTemp - 1]) {
-                    case '0':
-                        strUpper = nums[0];
-                        break;
-                    case '1':
-                        strUpper = nums[1];
-                        break;
-                    case '2':
-                        strUpper = nums[2];
-                        break;
-                    case '3':
-                        strUpper = nums[3];
-                        break;
-                    case '4':
-                        strUpper = nums[4];
-                        break;
-                    case '5':
-                        strUpper = nums[5];
-                        break;
-                    case '6':
-                        strUpper = nums[6];
-                        break;
-                    case '7':
-                        strUpper = nums[7];
-                        break;
-                    case '8':
-                        strUpper = nums[8];
-                        break;
-                    case '9':
-                        strUpper = nums[9];
-                        break;
-                }
-                switch (iTemp) {
-                    case 1:
-                        strUnit = bits[iTemp];
-                        break;
-                    case 2:
-                        strUnit = bits[iTemp - 2];
-                        break;
-                    default:
-                        strUnit = "";
-                        break;
-                }
-                iTemp++;
-                dotString += strUpper + strUnit;
+            //转换小数部分数字
+            for (int i = 2; i > 0; i--) {
+                Int32 num = Convert.ToInt32(stringBuilder[2 - i].ToString());   //获取当前数字
+                stringBuilder.Append(nums[num]);    //追加大写数字
+                stringBuilder.Append(bits[i - 1]);  //追加金额单位
             }
+
+            stringBuilder.Remove(0, 2);  //移除原有的小写数字内容
+            dotString = "" + stringBuilder;
+
             return dotString;
         }
 
         public override string ToString() {
-            string @int;
-            string dot;
-
+            string @int;    //整数字符串 int是整型标识符，不能当作变量名，需要加 " @ " 进行规避
+            string dot;     //尾数字符串
             Money = Math.Round(Money, 2, MidpointRounding.AwayFromZero);    //四舍五入
             decimal money = Math.Abs(Money);   //绝对值
+
             //判断是否存在小数点
             int index = money.ToString().IndexOf(".");
             if (index >= 0) {
                 string[] str = money.ToString().Split('.');
                 @int = getIntString(str[0]);
-                //小数点后不足两位补齐0
+                //小数点后不足两位则补齐0
                 if (str[1].Length == 1) {
                     str[1] += "0";
                     dot = getDotString(str[1]);
@@ -178,6 +83,10 @@ namespace Library6335 {
                     dot = getDotString(str[1]);
                 }
             } else {
+                /* 若输入：
+                 * 123. 或 123 这类没有小数点或小数点后无数字的金额时，补0
+                 * 因为decimal会自动忽略没有尾数的数字小数点
+                 */
                 @int = getIntString(money.ToString());
                 dot = getDotString("00");
             }
