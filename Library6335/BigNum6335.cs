@@ -1,8 +1,8 @@
-﻿namespace Library6335 {
-    using System;
-    using System.Drawing;
-    using System.Text;
+﻿using System;
+using System.Drawing;
+using System.Text;
 
+namespace Library6335 {
     public class BigNum6335 {
         private string[] bits = { "分", "角", "元", "拾", "佰", "千", "万", "十万", "佰万", "仟万", "亿" };
         private string[] nums = { "零", "壹", "贰", "叁", "肆", "伍", "陆", "柒", "捌", "玖" };

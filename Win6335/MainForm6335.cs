@@ -12,6 +12,8 @@ namespace Win6335 {
     public partial class MainForm6335 : Form {
         public MainForm6335() {
             InitializeComponent();
+            tabPage1.Text = "Window";
+            tabPage2.Text = "OOP";
         }
 
 
@@ -78,6 +80,20 @@ namespace Win6335 {
         private void button13_Click(object sender, EventArgs e) {
             GDI6335.SinxForm6335 sinx = new GDI6335.SinxForm6335();
             sinx.Show();
+        }
+
+        private void button14_Click(object sender, EventArgs e) {
+            OOP6335.BigNumForm6335 bigNum = new OOP6335.BigNumForm6335();
+            bigNum.Show();
+        }
+
+        private void button15_Click(object sender, EventArgs e) {
+            OOP6335.ComplexForm6335 complex = new OOP6335.ComplexForm6335();
+            complex.Show();
+        }
+
+        private void button16_Click(object sender, EventArgs e) {
+
         }
     }
 }
