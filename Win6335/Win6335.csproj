@@ -97,6 +97,12 @@
     <Compile Include="OOP6335\ComplexForm6335.Designer.cs">
       <DependentUpon>ComplexForm6335.cs</DependentUpon>
     </Compile>
+    <Compile Include="OOP6335\TypeForm6335.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OOP6335\TypeForm6335.Designer.cs">
+      <DependentUpon>TypeForm6335.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Win6335\ArrayForm.cs">
@@ -170,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OOP6335\ComplexForm6335.resx">
       <DependentUpon>ComplexForm6335.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OOP6335\TypeForm6335.resx">
+      <DependentUpon>TypeForm6335.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

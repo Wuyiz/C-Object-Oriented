@@ -47,7 +47,9 @@
   <ItemGroup>
     <Compile Include="BigNum6335.cs" />
     <Compile Include="ComplexNumber6335.cs" />
+    <Compile Include="Enum6335.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadFromEnum6335.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />

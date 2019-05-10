@@ -32,6 +32,7 @@ namespace Win6335 {
 
             //Application.Run(new OOP6335.BigNumForm6335());
             //Application.Run(new OOP6335.ComplexForm6335());
+            //Application.Run(new OOP6335.TypeForm6335());
         }
     }
 }

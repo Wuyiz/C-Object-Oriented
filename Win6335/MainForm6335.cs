@@ -93,7 +93,8 @@ namespace Win6335 {
         }
 
         private void button16_Click(object sender, EventArgs e) {
-
+            OOP6335.TypeForm6335 type = new OOP6335.TypeForm6335();
+            type.Show();
         }
     }
 }

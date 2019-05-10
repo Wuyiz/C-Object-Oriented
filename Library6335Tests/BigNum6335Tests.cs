@@ -4,7 +4,7 @@ using Library6335;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 
-namespace LibraryXXXXTests {
+namespace Library6335Tests {
     
     [TestClass]
     public class BigNum6335Tests {
