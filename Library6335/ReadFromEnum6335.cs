@@ -11,11 +11,10 @@ namespace Library6335 {
 
             //遍历枚举类型的常数值
             foreach (var item in Enum.GetValues(type)) {
-                enum_arr.Add((int)item + "," + item);   //按照“常数值，常数名称”存储枚举
+                enum_arr.Add((int)item + "," + item);   //按照“常数值，常数名称”格式存储枚举
             }
 
             return enum_arr;
-            throw new NotImplementedException();
         }
     }
 }

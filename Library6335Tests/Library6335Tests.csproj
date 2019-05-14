@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BigNum6335Tests.cs" />
+    <Compile Include="ComplexNumber6335Tests.cs" />
     <Compile Include="ReadFromEnum6335Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
