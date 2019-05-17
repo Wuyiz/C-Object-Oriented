@@ -97,6 +97,12 @@
     <Compile Include="OOP6335\ComplexForm6335.Designer.cs">
       <DependentUpon>ComplexForm6335.cs</DependentUpon>
     </Compile>
+    <Compile Include="OOP6335\DeckForm6335.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OOP6335\DeckForm6335.Designer.cs">
+      <DependentUpon>DeckForm6335.cs</DependentUpon>
+    </Compile>
     <Compile Include="OOP6335\LINQForm6335.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
     <EmbeddedResource Include="OOP6335\ComplexForm6335.resx">
       <DependentUpon>ComplexForm6335.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OOP6335\DeckForm6335.resx">
+      <DependentUpon>DeckForm6335.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OOP6335\LINQForm6335.resx">
       <DependentUpon>LINQForm6335.cs</DependentUpon>
     </EmbeddedResource>
@@ -197,6 +206,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Win6335\ArrayForm.resx">
       <DependentUpon>ArrayForm.cs</DependentUpon>
@@ -241,6 +251,9 @@
       <Project>{00996002-f881-4b1f-84fc-7f542c161e12}</Project>
       <Name>Library6335</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0d01b3cd98db94643b7d37d7088afdf4.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

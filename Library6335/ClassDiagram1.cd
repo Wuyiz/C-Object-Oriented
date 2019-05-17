@@ -1,18 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
   <Class Name="Library6335.ComplexNumber6335">
-    <Position X="3.25" Y="0.5" Width="4.5" />
+    <Position X="0.5" Y="0.5" Width="4.5" />
     <TypeIdentifier>
       <HashCode>AAAgAAAAAAAAAAAEwAGAAgAAAAAAAAAAAAAAIAEAByA=</HashCode>
       <FileName>ComplexNumber6335.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Library6335.Student6335">
-    <Position X="0.75" Y="2.75" Width="2.25" />
+    <Position X="5.25" Y="0.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAgAAgAgEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Student6335.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Library6335.Deck6335">
+    <Position X="9" Y="3.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAgAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Deck6335.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Card6335">
+    <Position X="5.25" Y="2.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAEAAAAAAAAAAAAAAAAAAAgAAAAAIA=</HashCode>
+      <FileName>Card6335.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="Suits6335">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAABAAAAAAAAAAAAAAAQAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Card6335.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Values6335">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACABAgAAAAAAAAAAAACgQAAAACAAAAAoQBACAAAEAA=</HashCode>
+      <FileName>Card6335.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Font Name="Microsoft YaHei UI" Size="9" />
 </ClassDiagram>

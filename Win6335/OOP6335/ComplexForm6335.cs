@@ -41,6 +41,7 @@ namespace Win6335.OOP6335 {
         public void isValid() {
 
             try {
+                isException = true;
                 if (tabControl1.SelectedIndex == 0) {
                     real_figure_1 = Convert.ToDouble(tbRfigure1.Text.Replace(" ", string.Empty));    //获取复数1
                     unreal_figure_1 = Convert.ToDouble(tbURfigure1.Text.Replace(" ", string.Empty));
@@ -65,7 +66,6 @@ namespace Win6335.OOP6335 {
 
         //Addition event
         private void rbAdd_Click(object sender, EventArgs e) {
-            isException = true;
             isValid();  //验证
             if (isException) {
                 complex = complexNumber1 + complexNumber2;  //调用重载后的 + 运算
@@ -77,7 +77,6 @@ namespace Win6335.OOP6335 {
 
         //Subtraction event
         private void rbSub_Click(object sender, EventArgs e) {
-            isException = true;
             isValid();  //验证
             if (isException) {
                 complex = complexNumber1 - complexNumber2;  //调用重载后的 - 运算
@@ -88,7 +87,6 @@ namespace Win6335.OOP6335 {
 
         //Comparison operation event: Equal
         private void rbEq_Click(object sender, EventArgs e) {
-            isException = true;
             isValid();  //验证
             if (isException) {
                 bool result = complexNumber1 == complexNumber2;  //调用重载后的 Eq 运算
@@ -99,7 +97,6 @@ namespace Win6335.OOP6335 {
 
         //Comparison operation event: Not Equal
         private void rbNeq_Click(object sender, EventArgs e) {
-            isException = true;
             isValid();  //验证
             if (isException) {
                 bool result = complexNumber1 != complexNumber2;  //调用重载后的 Neq 运算
@@ -110,7 +107,6 @@ namespace Win6335.OOP6335 {
 
         //Comparison operation event: Less than
         private void rbLt_Click(object sender, EventArgs e) {
-            isException = true;
             isValid();  //验证
             if (isException) {
                 bool result = complexNumber1 < complexNumber2;  //调用重载后的 &lt 运算
@@ -121,7 +117,6 @@ namespace Win6335.OOP6335 {
 
         //Comparison operation event: Greater than
         private void rbGt_Click(object sender, EventArgs e) {
-            isException = true;
             isValid();  //验证
             if (isException) {
                 bool result = complexNumber1 > complexNumber2;  //调用重载后的 &gt 运算

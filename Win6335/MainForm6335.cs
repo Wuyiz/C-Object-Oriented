@@ -101,5 +101,10 @@ namespace Win6335 {
             OOP6335.LINQForm6335 LINQ = new OOP6335.LINQForm6335();
             LINQ.Show();
         }
+
+        private void button17_Click(object sender, EventArgs e) {
+            OOP6335.DeckForm6335 deck = new OOP6335.DeckForm6335();
+            deck.Show();
+        }
     }
 }

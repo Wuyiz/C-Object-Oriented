@@ -47,30 +47,35 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 12);
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(551, 261);
+            this.dataGridView1.Size = new System.Drawing.Size(678, 261);
             this.dataGridView1.TabIndex = 0;
             // 
             // listBox1
             // 
+            this.listBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listBox1.Font = new System.Drawing.Font("隶书", 13F);
+            this.listBox1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 17;
-            this.listBox1.Location = new System.Drawing.Point(316, 321);
+            this.listBox1.ItemHeight = 22;
+            this.listBox1.Location = new System.Drawing.Point(336, 320);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(243, 208);
+            this.listBox1.Size = new System.Drawing.Size(354, 200);
             this.listBox1.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(315, 291);
+            this.label1.Location = new System.Drawing.Point(332, 295);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(242, 18);
+            this.label1.Size = new System.Drawing.Size(0, 22);
             this.label1.TabIndex = 2;
-            this.label1.Text = "按学号排序，输出所有属性：";
             // 
             // groupBox1
             // 
@@ -80,7 +85,7 @@
             this.groupBox1.Controls.Add(this.rbID);
             this.groupBox1.Location = new System.Drawing.Point(2, 304);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(292, 70);
+            this.groupBox1.Size = new System.Drawing.Size(308, 70);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "排序";
@@ -90,7 +95,7 @@
             this.rbSource.AutoSize = true;
             this.rbSource.Location = new System.Drawing.Point(210, 32);
             this.rbSource.Name = "rbSource";
-            this.rbSource.Size = new System.Drawing.Size(80, 22);
+            this.rbSource.Size = new System.Drawing.Size(97, 26);
             this.rbSource.TabIndex = 3;
             this.rbSource.TabStop = true;
             this.rbSource.Text = "生源地";
@@ -102,7 +107,7 @@
             this.rbScore.AutoSize = true;
             this.rbScore.Location = new System.Drawing.Point(142, 32);
             this.rbScore.Name = "rbScore";
-            this.rbScore.Size = new System.Drawing.Size(62, 22);
+            this.rbScore.Size = new System.Drawing.Size(75, 26);
             this.rbScore.TabIndex = 2;
             this.rbScore.TabStop = true;
             this.rbScore.Text = "成绩";
@@ -114,7 +119,7 @@
             this.rbName.AutoSize = true;
             this.rbName.Location = new System.Drawing.Point(74, 32);
             this.rbName.Name = "rbName";
-            this.rbName.Size = new System.Drawing.Size(62, 22);
+            this.rbName.Size = new System.Drawing.Size(75, 26);
             this.rbName.TabIndex = 1;
             this.rbName.TabStop = true;
             this.rbName.Text = "姓名";
@@ -126,7 +131,7 @@
             this.rbID.AutoSize = true;
             this.rbID.Location = new System.Drawing.Point(6, 32);
             this.rbID.Name = "rbID";
-            this.rbID.Size = new System.Drawing.Size(62, 22);
+            this.rbID.Size = new System.Drawing.Size(75, 26);
             this.rbID.TabIndex = 0;
             this.rbID.TabStop = true;
             this.rbID.Text = "学号";
@@ -137,7 +142,7 @@
             // 
             this.btnList_li.Location = new System.Drawing.Point(7, 408);
             this.btnList_li.Name = "btnList_li";
-            this.btnList_li.Size = new System.Drawing.Size(116, 34);
+            this.btnList_li.Size = new System.Drawing.Size(131, 34);
             this.btnList_li.TabIndex = 4;
             this.btnList_li.Text = "姓李的名单";
             this.btnList_li.UseVisualStyleBackColor = true;
@@ -147,7 +152,7 @@
             // 
             this.btn400.Location = new System.Drawing.Point(144, 470);
             this.btn400.Name = "btn400";
-            this.btn400.Size = new System.Drawing.Size(161, 34);
+            this.btn400.Size = new System.Drawing.Size(186, 34);
             this.btn400.TabIndex = 5;
             this.btn400.Text = "400分以上的名单";
             this.btn400.UseVisualStyleBackColor = true;
@@ -157,7 +162,7 @@
             // 
             this.btnXiamen_stu.Location = new System.Drawing.Point(144, 408);
             this.btnXiamen_stu.Name = "btnXiamen_stu";
-            this.btnXiamen_stu.Size = new System.Drawing.Size(145, 34);
+            this.btnXiamen_stu.Size = new System.Drawing.Size(186, 34);
             this.btnXiamen_stu.TabIndex = 6;
             this.btnXiamen_stu.Text = "来自厦门的学生";
             this.btnXiamen_stu.UseVisualStyleBackColor = true;
@@ -167,7 +172,7 @@
             // 
             this.btnCount_source.Location = new System.Drawing.Point(7, 470);
             this.btnCount_source.Name = "btnCount_source";
-            this.btnCount_source.Size = new System.Drawing.Size(116, 34);
+            this.btnCount_source.Size = new System.Drawing.Size(131, 34);
             this.btnCount_source.TabIndex = 7;
             this.btnCount_source.Text = "生源地统计";
             this.btnCount_source.UseVisualStyleBackColor = true;
@@ -175,10 +180,10 @@
             // 
             // LINQForm6335
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(569, 532);
+            this.ClientSize = new System.Drawing.Size(707, 532);
             this.Controls.Add(this.btnCount_source);
             this.Controls.Add(this.btnXiamen_stu);
             this.Controls.Add(this.btn400);

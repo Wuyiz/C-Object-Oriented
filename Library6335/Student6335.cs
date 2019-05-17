@@ -51,7 +51,7 @@ namespace Library6335 {
         public string Source { get; set; } //生源地
 
         public override string ToString() {
-            return base.ToString();
+            return $"ID={Name} \t{ID}\t{Score}\t{Source}";
         }
     }
 }
