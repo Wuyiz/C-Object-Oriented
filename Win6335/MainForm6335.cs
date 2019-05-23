@@ -106,5 +106,10 @@ namespace Win6335 {
             OOP6335.DeckForm6335 deck = new OOP6335.DeckForm6335();
             deck.Show();
         }
+
+        private void button20_Click(object sender, EventArgs e) {
+            OOP6335.DelegateForm6335 @delegate = new OOP6335.DelegateForm6335();
+            @delegate.Show();
+        }
     }
 }

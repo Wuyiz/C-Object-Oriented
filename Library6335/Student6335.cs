@@ -41,6 +41,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Library6335 {
+    /// <summary>
+    /// Implement interface IComparable<Student>
+    /// </summary>
     public class Student6335 : IComparable<Student6335> {
         public string Name { get; set; } //学生姓名
 
@@ -50,16 +53,12 @@ namespace Library6335 {
 
         public string Source { get; set; } //生源地
 
-        //定义与委托Comparison<T>兼容的方法
-        public static int SortByName(Student6335 x, Student6335 y) {
-            return string.Compare(x.Name, y.Name);
-        }
-
-        //定义与委托匹配的方法作为FindAll方法的参数
-        public static bool FindByName6335(Student6335 stu) {
-            return stu.Name.StartsWith("李");
-        }
-
+        /// <summary>
+        /// Custom compareTo method
+        /// Achieve comparison by student number
+        /// </summary>
+        /// <param name="other">Accept the incoming Student6335 object</param>
+        /// <returns>Return the size of the comparison</returns>
         public int CompareTo(Student6335 other) {
             if (other == null) {
                 return -1;

@@ -53,6 +53,9 @@
             this.button16 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -62,6 +65,7 @@
             this.tabPage2.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -313,6 +317,7 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.tabPage2.Controls.Add(this.groupBox6);
             this.tabPage2.Controls.Add(this.groupBox5);
             this.tabPage2.Controls.Add(this.groupBox4);
             this.tabPage2.Controls.Add(this.button14);
@@ -405,6 +410,40 @@
             this.button14.UseVisualStyleBackColor = true;
             this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.button19);
+            this.groupBox6.Controls.Add(this.button20);
+            this.groupBox6.Location = new System.Drawing.Point(22, 414);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox6.Size = new System.Drawing.Size(576, 130);
+            this.groupBox6.TabIndex = 16;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "实验8 委托与事件";
+            // 
+            // button19
+            // 
+            this.button19.Location = new System.Drawing.Point(261, 53);
+            this.button19.Margin = new System.Windows.Forms.Padding(5);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(121, 44);
+            this.button19.TabIndex = 2;
+            this.button19.Text = "扑克牌";
+            this.button19.UseVisualStyleBackColor = true;
+            // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(9, 53);
+            this.button20.Margin = new System.Windows.Forms.Padding(5);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(229, 44);
+            this.button20.TabIndex = 1;
+            this.button20.Text = "委托在集合中的应用";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
+            // 
             // MainForm6335
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 30F);
@@ -429,6 +468,7 @@
             this.tabPage2.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -464,5 +504,8 @@
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button20;
     }
 }

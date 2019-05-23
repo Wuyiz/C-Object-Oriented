@@ -68,7 +68,7 @@
             this.listBox1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 22;
-            this.listBox1.Location = new System.Drawing.Point(336, 295);
+            this.listBox1.Location = new System.Drawing.Point(336, 310);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(354, 200);
             this.listBox1.TabIndex = 1;
@@ -76,10 +76,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(332, 295);
+            this.label1.Location = new System.Drawing.Point(332, 285);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 22);
+            this.label1.Size = new System.Drawing.Size(32, 22);
             this.label1.TabIndex = 2;
+            this.label1.Text = "..";
             // 
             // groupBox1
             // 
@@ -87,7 +88,7 @@
             this.groupBox1.Controls.Add(this.rbScore);
             this.groupBox1.Controls.Add(this.rbName);
             this.groupBox1.Controls.Add(this.rbID);
-            this.groupBox1.Location = new System.Drawing.Point(8, 279);
+            this.groupBox1.Location = new System.Drawing.Point(8, 294);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(308, 70);
             this.groupBox1.TabIndex = 3;
@@ -144,7 +145,7 @@
             // 
             // btnList_li
             // 
-            this.btnList_li.Location = new System.Drawing.Point(6, 355);
+            this.btnList_li.Location = new System.Drawing.Point(6, 370);
             this.btnList_li.Name = "btnList_li";
             this.btnList_li.Size = new System.Drawing.Size(131, 34);
             this.btnList_li.TabIndex = 4;
@@ -154,7 +155,7 @@
             // 
             // btn400
             // 
-            this.btn400.Location = new System.Drawing.Point(7, 395);
+            this.btn400.Location = new System.Drawing.Point(7, 410);
             this.btn400.Name = "btn400";
             this.btn400.Size = new System.Drawing.Size(186, 34);
             this.btn400.TabIndex = 5;
@@ -164,7 +165,7 @@
             // 
             // btnXiamen_stu
             // 
-            this.btnXiamen_stu.Location = new System.Drawing.Point(143, 355);
+            this.btnXiamen_stu.Location = new System.Drawing.Point(143, 370);
             this.btnXiamen_stu.Name = "btnXiamen_stu";
             this.btnXiamen_stu.Size = new System.Drawing.Size(186, 34);
             this.btnXiamen_stu.TabIndex = 6;
@@ -177,7 +178,7 @@
             this.groupBox2.Controls.Add(this.rbMin_Score);
             this.groupBox2.Controls.Add(this.rbMax_Score);
             this.groupBox2.Controls.Add(this.rbAverge_Score);
-            this.groupBox2.Location = new System.Drawing.Point(8, 435);
+            this.groupBox2.Location = new System.Drawing.Point(8, 450);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(322, 60);
             this.groupBox2.TabIndex = 7;
@@ -225,7 +226,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(700, 498);
+            this.ClientSize = new System.Drawing.Size(703, 511);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnXiamen_stu);
             this.Controls.Add(this.btn400);

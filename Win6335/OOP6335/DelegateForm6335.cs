@@ -1,5 +1,5 @@
 ﻿/**                                                                          
- *          .,:,,,          狗头在此，bug退散              .::,,,::.          
+ *          .,:,,,                                        .::,,,::.          
  *        .::::,,;;,                                  .,;;:,,....:i:         
  *        :i,.::::,;i:.      ....,,:::::::::,....   .;i:,.  ......;i.        
  *        :;..:::;::::i;,,:::;:,,,,,,,,,,..,.,,:::iri:. .,:irsr:,.;i.        
@@ -19,8 +19,8 @@
  *  :1:....:5&XSi;r8BMBHHA9r:,......,,,,:ii19GG88899XHHH&GSr.      ...,:rs. 
  *  ;s.     .:sS8G8GG889hi.        ....,,:;:,.:irssrriii:,.        ...,,i1,  
  *  ;1,         ..,....,,isssi;,        .,,.                      ....,.i1,  
- *  ;h:               i9HHBMBBHAX9:         .                     ...,,,rs,  
- *  ,1i..            :A#MBBBBMHB##s                             ....,,,;si.  
+ *  ;h:               i9HHBMBBHAX9:         .                     ...,,,rs,   狗头在此，bug退散
+ *  ,1i..            :A#MBBBBMHB##s                             ....,,,;si.   
  *  .r1,..        ,..;3BMBBBHBB#Bh.     ..                    ....,,,,,i1;   
  *   :h;..       .,..;,1XBMMMMBXs,.,, .. :: ,.               ....,,,,,,ss.   
  *    ih: ..    .;;;, ;;:s58A3i,..    ,. ,.:,,.             ...,,,,,:,s1,    
@@ -81,6 +81,13 @@ namespace Win6335.OOP6335 {
             return Students;
         }
 
+        /// <summary>
+        /// Button：按学号排序
+        /// 调用提供的无参数Sort方法
+        /// 按List<T>按学生编号排序
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void rbID_CheckedChanged(object sender, EventArgs e) {
             label1.Text = "按学号排序，输出所有属性：";
 
@@ -95,13 +102,31 @@ namespace Win6335.OOP6335 {
             info.ForEach(result_ID);
         }
 
+        /// <summary>
+        /// Define the SortByName method that is compatible with delegate Comparison<T>
+        /// Implement sort by name
+        /// </summary>
+        /// <param name="x">Accept the incoming Student6335 object</param>
+        /// <param name="y">Accept the incoming Student6335 object</param>
+        /// <returns>返回比较结果</returns>
+        public static int SortByName(Student6335 x, Student6335 y) {
+            return string.Compare(x.Name, y.Name);
+        }
+
+        /// <summary>
+        /// Button：按姓名排序
+        /// 使用List<T>的Sort(Comparison<T>)方法进行排序
+        /// 定义与委托匹配的方法作为sort方法的参数
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void rbName_CheckedChanged(object sender, EventArgs e) {
             label1.Text = "按姓名排序,列出学号、姓名：";
 
             List<Student6335> info = Students;
             Action<Student6335> result_Name =
                 res => listBox1.Items.Add($"{res.ID}\t{res.Name}");
-            Comparison<Student6335> stu_SortByName = Student6335.SortByName;
+            Comparison<Student6335> stu_SortByName = SortByName;
 
             listBox1.DataSource = null;
             listBox1.Items.Clear();
@@ -110,6 +135,13 @@ namespace Win6335.OOP6335 {
             info.ForEach(result_Name);
         }
 
+        /// <summary>
+        /// Button：按成绩排序
+        /// 使用List<T>的Sort(Comparison<T>)方法进行排序
+        /// 使用匿名方法为sort方法的参数
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void rbScore_CheckedChanged(object sender, EventArgs e) {
             label1.Text = "按成绩排序，列出学号，姓名，成绩：";
 
@@ -120,7 +152,7 @@ namespace Win6335.OOP6335 {
             listBox1.DataSource = null;
             listBox1.Items.Clear();
 
-            //匿名方法为sort方法的参数
+            //匿名方法作为sort方法的参数
             info.Sort(
                 delegate (Student6335 x, Student6335 y) {
                     return x.Score - y.Score;
@@ -128,6 +160,13 @@ namespace Win6335.OOP6335 {
             info.ForEach(result_Score);
         }
 
+        /// <summary>
+        /// Button：按生源地排序
+        /// 使用List<T>的Sort(Comparison<T>)方法进行排序
+        /// 使用Lambda表达式作为sort方法的参数
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void rbSource_CheckedChanged(object sender, EventArgs e) {
             label1.Text = "按生源地排序，列出学号、姓名、生源地：";
 
@@ -145,10 +184,27 @@ namespace Win6335.OOP6335 {
             info.ForEach(result_Source);
         }
 
+        /// <summary>
+        /// Define a method that matches the delegate as a parameter to the FindAll method
+        /// Whether the surname of the judgment object is "Li"
+        /// </summary>
+        /// <param name="stu">Accept the incoming Student6335 object</param>
+        /// <returns>Return bool value</returns>
+        public static bool FindByName6335(Student6335 stu) {
+            return stu.Name.StartsWith("李");
+        }
+
+        /// <summary>
+        /// Button：姓李的学生
+        /// 使用List<T>的FindAll(Predicate< StudentXXXX >)方法进行查找
+        /// 定义与委托匹配的方法作为FindAll方法的参数
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnList_li_Click(object sender, EventArgs e) {
             label1.Text = "姓李的学生名单:";
 
-            List<Student6335> info = Students.FindAll(Student6335.FindByName6335);
+            List<Student6335> info = Students.FindAll(FindByName6335);
             Action<Student6335> result_Li =
                 res => listBox1.Items.Add(res);
 
@@ -158,6 +214,13 @@ namespace Win6335.OOP6335 {
             info.ForEach(result_Li);
         }
 
+        /// <summary>
+        /// Button：来自厦门的学生
+        /// 使用List<T>的FindAll(Predicate< StudentXXXX >)方法进行查找
+        /// 使用Lambda表达式作为FindAll方法的参数
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnXiamen_stu_Click(object sender, EventArgs e) {
             label1.Text = "来自厦门的学生:";
 
@@ -173,7 +236,13 @@ namespace Win6335.OOP6335 {
             info.ForEach(result_Xiamen_stu);
         }
 
-        //匿名方法作为FindAll方法的参数
+        /// <summary>
+        /// Button：400分以上的学生
+        /// 使用List<T>的FindAll(Predicate< StudentXXXX >)方法进行查找
+        /// 使用匿名方法作为FindAll方法的参数
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn400_Click(object sender, EventArgs e) {
             label1.Text = "400分以上的名单:";
 
@@ -190,6 +259,13 @@ namespace Win6335.OOP6335 {
             info.ForEach(result_400);
         }
 
+        /// <summary>
+        /// Button：平均成绩
+        /// 使用扩展方法Averge，Lambda作为表达式，对集合中的学生成绩进行统计
+        /// 用MessageBox显示结果
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void rbAverge_Score_Click(object sender, EventArgs e) {
             label1.Text = "";
 
@@ -201,6 +277,13 @@ namespace Win6335.OOP6335 {
             MessageBox.Show($"平均成绩：{(int)averge}", "计算", 0);
         }
 
+        /// <summary>
+        /// Button：最高分
+        /// 使用扩展方法Max，Lambda作为表达式，对集合中的学生成绩进行统计
+        /// 用MessageBox显示结果
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void rbMax_Score_Click(object sender, EventArgs e) {
             label1.Text = "";
 
@@ -212,6 +295,13 @@ namespace Win6335.OOP6335 {
             MessageBox.Show($"最高分：{max}", "计算", 0);
         }
 
+        /// <summary>
+        /// Button：最低分
+        /// 使用扩展方法Min，Lambda作为表达式，对集合中的学生成绩进行统计
+        /// 用MessageBox显示结果
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void rbMin_Score_Click(object sender, EventArgs e) {
             label1.Text = "";
 
