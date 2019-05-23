@@ -34,8 +34,9 @@ namespace Win6335 {
             //Application.Run(new OOP6335.TypeForm6335());
             //Application.Run(new OOP6335.LINQForm6335());
             //Application.Run(new OOP6335.DeckForm6335());
+            Application.Run(new OOP6335.DelegateForm6335());
 
-            Application.Run(new MainForm6335());
+            //Application.Run(new MainForm6335());
         }
     }
 }
