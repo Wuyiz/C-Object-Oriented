@@ -111,5 +111,10 @@ namespace Win6335 {
             OOP6335.DelegateForm6335 @delegate = new OOP6335.DelegateForm6335();
             @delegate.Show();
         }
+
+        private void button19_Click(object sender, EventArgs e) {
+            OOP6335.WaterBoiledForm6335 waterBoiled = new OOP6335.WaterBoiledForm6335();
+            waterBoiled.Show();
+        }
     }
 }

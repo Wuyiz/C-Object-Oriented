@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="Library6335.ComplexNumber6335">
     <Position X="0.5" Y="0.5" Width="4.5" />
     <TypeIdentifier>
@@ -8,23 +8,52 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Library6335.Student6335">
-    <Position X="5.25" Y="0.5" Width="2.25" />
+    <Position X="5.5" Y="0.5" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAgAAgAgEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAgAAgAwEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Student6335.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Library6335.Deck6335">
-    <Position X="9" Y="3.75" Width="2.75" />
+    <Position X="9.5" Y="4" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAgAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Deck6335.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Struct Name="Card6335">
-    <Position X="5.25" Y="2.75" Width="3.5" />
+  <Class Name="Library6335.WaterBoiledEventArgs">
+    <Position X="0.5" Y="5.75" Width="4.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAABAAAAAAAAEAAAAAAAAAAAAAAAAAAAgAAAAAIA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>WaterBoiledEvent6335.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Library6335.Heater6335">
+    <Position X="4.75" Y="7.25" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAACAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>WaterBoiledEvent6335.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Library6335.Display6335">
+    <Position X="0.5" Y="7.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>WaterBoiledEvent6335.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Library6335.Alarm6335">
+    <Position X="0.5" Y="4.5" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>WaterBoiledEvent6335.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Card6335">
+    <Position X="5.75" Y="3" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAEgAAAAAAAAAAAAAAAAAAgAAAAAIA=</HashCode>
       <FileName>Card6335.cs</FileName>
     </TypeIdentifier>
   </Struct>
