@@ -116,5 +116,10 @@ namespace Win6335 {
             OOP6335.WaterBoiledForm6335 waterBoiled = new OOP6335.WaterBoiledForm6335();
             waterBoiled.Show();
         }
+
+        private void button21_Click(object sender, EventArgs e) {
+            Win6335.FileIO6335.EncodingForm6335 encoding = new Win6335.FileIO6335.EncodingForm6335();
+            encoding.Show();
+        }
     }
 }

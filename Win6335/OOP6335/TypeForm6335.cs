@@ -7,6 +7,13 @@ namespace Win6335.OOP6335 {
     public partial class TypeForm6335 : Form {
         public TypeForm6335() {
             InitializeComponent();
+            comboBox1.Items.AddRange(new object[] {
+            "CustomerType6335",
+            "Degree6335",
+            "StaffState6335",
+            "TourState6335",
+            "Area6335",
+            "SceneType6335"});
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e) {

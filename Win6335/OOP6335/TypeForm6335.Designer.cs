@@ -32,13 +32,6 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "CustomerType6335",
-            "Degree6335",
-            "StaffState6335",
-            "TourState6335",
-            "Area6335",
-            "SceneType6335"});
             this.comboBox1.Location = new System.Drawing.Point(226, 31);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(139, 30);

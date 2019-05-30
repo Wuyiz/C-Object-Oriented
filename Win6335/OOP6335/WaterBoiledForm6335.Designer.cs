@@ -56,7 +56,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
             this.Font = new System.Drawing.Font("隶书", 13F);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "WaterBoiledForm6335";
             this.Text = "热水器沸水事件6335";
             this.ResumeLayout(false);

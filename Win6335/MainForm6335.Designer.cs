@@ -56,6 +56,9 @@
             this.button16 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button21 = new System.Windows.Forms.Button();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -66,6 +69,8 @@
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -294,6 +299,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -445,6 +451,37 @@
             this.button14.UseVisualStyleBackColor = true;
             this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.tabPage3.Controls.Add(this.groupBox7);
+            this.tabPage3.Location = new System.Drawing.Point(4, 39);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(658, 616);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "文件与数据库";
+            // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(32, 38);
+            this.button21.Margin = new System.Windows.Forms.Padding(5);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(229, 44);
+            this.button21.TabIndex = 2;
+            this.button21.Text = "字符的编码与解码";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.button21);
+            this.groupBox7.Location = new System.Drawing.Point(3, 41);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(617, 100);
+            this.groupBox7.TabIndex = 3;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "实验10 文件操作与流";
+            // 
             // MainForm6335
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 30F);
@@ -470,6 +507,8 @@
             this.groupBox6.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.groupBox7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -508,5 +547,8 @@
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.GroupBox groupBox7;
     }
 }

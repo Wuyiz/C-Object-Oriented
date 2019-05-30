@@ -20,17 +20,32 @@ namespace Win6335.Win6335 {
             listBox1.Items.Add("女");
 
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.Items.Add("计算机科学与技术");
-            comboBox1.Items.Add("网络工程");
-            comboBox1.Items.Add("软件工程");
-            comboBox1.Items.Add("通信工程");
-            comboBox1.Items.Add("电子信息工程");
 
-            checkedListBox1.Items.Add("唱歌");
-            checkedListBox1.Items.Add("跳舞");
-            checkedListBox1.Items.Add("打篮球");
-            checkedListBox1.Items.Add("踢足球");
-            checkedListBox1.Items.Add("看书");
+            //comboBox1.Items.Add("计算机科学与技术");
+            //comboBox1.Items.Add("网络工程");
+            //comboBox1.Items.Add("软件工程");
+            //comboBox1.Items.Add("通信工程");
+            //comboBox1.Items.Add("电子信息工程");
+            comboBox1.Items.AddRange(new object[] {
+                "计算机科学与技术",
+                "网络工程",
+                "软件工程",
+                "通信工程",
+                "电子信息工程"
+            });
+
+            //checkedListBox1.Items.Add("唱歌");
+            //checkedListBox1.Items.Add("跳舞");
+            //checkedListBox1.Items.Add("打篮球");
+            //checkedListBox1.Items.Add("踢足球");
+            //checkedListBox1.Items.Add("看书");
+            checkedListBox1.Items.AddRange(new object[] {
+                "唱歌",
+                "跳舞",
+                "打篮球",
+                "踢足球",
+                "看书"
+            });
         }
 
         private void button1_Click(object sender, EventArgs e) {

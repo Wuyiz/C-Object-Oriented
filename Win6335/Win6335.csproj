@@ -165,6 +165,12 @@
     <Compile Include="Win6335\EditorForm6335.Designer.cs">
       <DependentUpon>EditorForm6335.cs</DependentUpon>
     </Compile>
+    <Compile Include="Win6335\FileIO6335\EncodingForm6335.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win6335\FileIO6335\EncodingForm6335.Designer.cs">
+      <DependentUpon>EncodingForm6335.cs</DependentUpon>
+    </Compile>
     <Compile Include="Win6335\ListForm6335.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -243,6 +249,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Win6335\EditorForm6335.resx">
       <DependentUpon>EditorForm6335.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win6335\FileIO6335\EncodingForm6335.resx">
+      <DependentUpon>EncodingForm6335.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Win6335\ListForm6335.resx">
       <DependentUpon>ListForm6335.cs</DependentUpon>
