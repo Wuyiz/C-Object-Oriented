@@ -171,6 +171,12 @@
     <Compile Include="Win6335\FileIO6335\EncodingForm6335.Designer.cs">
       <DependentUpon>EncodingForm6335.cs</DependentUpon>
     </Compile>
+    <Compile Include="Win6335\FileIO6335\FileSystemWatcherForm6335.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win6335\FileIO6335\FileSystemWatcherForm6335.Designer.cs">
+      <DependentUpon>FileSystemWatcherForm6335.cs</DependentUpon>
+    </Compile>
     <Compile Include="Win6335\ListForm6335.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Win6335\FileIO6335\EncodingForm6335.resx">
       <DependentUpon>EncodingForm6335.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win6335\FileIO6335\FileSystemWatcherForm6335.resx">
+      <DependentUpon>FileSystemWatcherForm6335.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Win6335\ListForm6335.resx">
       <DependentUpon>ListForm6335.cs</DependentUpon>

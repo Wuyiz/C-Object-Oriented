@@ -121,5 +121,10 @@ namespace Win6335 {
             Win6335.FileIO6335.EncodingForm6335 encoding = new Win6335.FileIO6335.EncodingForm6335();
             encoding.Show();
         }
+
+        private void button22_Click(object sender, EventArgs e) {
+            Win6335.FileIO6335.FileSystemWatcherForm6335 fileSystemWatcher = new Win6335.FileIO6335.FileSystemWatcherForm6335();
+            fileSystemWatcher.Show();
+        }
     }
 }

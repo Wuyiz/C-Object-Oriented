@@ -23,6 +23,7 @@ namespace Win6335 {
             //Application.Run(new Win6335.CloseForm6335());
             //Application.Run(new Win6335.ControlsForm6335());
             //Application.Run(new Win6335.FileIO6335.EncodingForm6335());
+            //Application.Run(new Win6335.FileIO6335.FileSystemWatcherForm6335());
 
             //Application.Run(new GDI6335.LineForm6335());
             //Application.Run(new GDI6335.PieForm6335());

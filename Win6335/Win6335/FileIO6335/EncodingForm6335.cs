@@ -18,12 +18,12 @@ namespace Win6335.Win6335.FileIO6335 {
                 Encoding.ASCII,
                 Encoding.Unicode,
                 Encoding.UTF32,
-                Encoding.UTF7,
+                Encoding.UTF7,  
                 Encoding.UTF8
             });
             cmbEncoding.SelectedIndex = 0;
-            tbInput.Text = $@"使用{cmbEncoding.Text}，该类为抽象类";
-            tbFile_name.Text = "wuyiz.txt";
+            //tbInput.Text = $@"使用{cmbEncoding.Text}，该类为抽象类";
+            //tbFile_name.Text = "wuyiz.txt";
 
         }
 
