@@ -58,8 +58,11 @@
             this.button14 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.button21 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -72,6 +75,7 @@
             this.groupBox4.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox7.SuspendLayout();
+            this.groupBox8.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -455,6 +459,7 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.tabPage3.Controls.Add(this.groupBox8);
             this.tabPage3.Controls.Add(this.groupBox7);
             this.tabPage3.Location = new System.Drawing.Point(4, 39);
             this.tabPage3.Name = "tabPage3";
@@ -473,6 +478,16 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "实验10 文件操作与流";
             // 
+            // button22
+            // 
+            this.button22.Location = new System.Drawing.Point(314, 38);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(196, 44);
+            this.button22.TabIndex = 3;
+            this.button22.Text = "文件系统监视器";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
             // button21
             // 
             this.button21.Location = new System.Drawing.Point(32, 38);
@@ -484,15 +499,37 @@
             this.button21.UseVisualStyleBackColor = true;
             this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
-            // button22
+            // groupBox8
             // 
-            this.button22.Location = new System.Drawing.Point(314, 38);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(196, 44);
-            this.button22.TabIndex = 3;
-            this.button22.Text = "文件系统监视器";
-            this.button22.UseVisualStyleBackColor = true;
-            this.button22.Click += new System.EventHandler(this.button22_Click);
+            this.groupBox8.Controls.Add(this.button24);
+            this.groupBox8.Controls.Add(this.button23);
+            this.groupBox8.Location = new System.Drawing.Point(3, 183);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(617, 100);
+            this.groupBox8.TabIndex = 3;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "实验11 数据库编程";
+            // 
+            // button23
+            // 
+            this.button23.Location = new System.Drawing.Point(32, 38);
+            this.button23.Margin = new System.Windows.Forms.Padding(5);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(229, 44);
+            this.button23.TabIndex = 3;
+            this.button23.Text = "ADO.NET";
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
+            // 
+            // button24
+            // 
+            this.button24.Location = new System.Drawing.Point(314, 38);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(196, 44);
+            this.button24.TabIndex = 4;
+            this.button24.Text = "LINQ to SQL";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
             // MainForm6335
             // 
@@ -521,6 +558,7 @@
             this.groupBox4.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
+            this.groupBox8.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -563,5 +601,8 @@
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button button23;
     }
 }
