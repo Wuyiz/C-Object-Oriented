@@ -11,7 +11,6 @@ using System.Windows.Forms;
 
 namespace Win6335.Win6335.DB6335 {
     public partial class ADONETForm6335 : Form {
-        Form form = null;   //定义判断窗体是否在加载状态
         public ADONETForm6335() {
             InitializeComponent();
             //铺满
@@ -155,14 +154,10 @@ namespace Win6335.Win6335.DB6335 {
                 //Tables[0]表示第一张表数据
                 dataGridView1.DataSource = dataSet.Tables[0];
 
-                //避免刷新数据时一并刷新下拉框列表默认显示值
-                if (form == null) {
-                    //绑定数据源到下拉列表
-                    //显示学号列为列表值
-                    cmbStu_No.DataSource = dataSet.Tables[0];
-                    cmbStu_No.DisplayMember = "SNo";
-                    form = new Form();
-                }
+                //绑定数据源到下拉列表
+                //显示学号列为列表值
+                cmbStu_No.DataSource = dataSet.Tables[0];
+                cmbStu_No.DisplayMember = "SNo";
             }
         }
 
