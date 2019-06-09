@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Win6335.Win6335.DB6335 {
+namespace Win6335.DB6335 {
     public partial class ADONETForm6335 : Form {
         public ADONETForm6335() {
             InitializeComponent();

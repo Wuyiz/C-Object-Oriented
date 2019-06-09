@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Linq.Mapping;
 
-namespace Win6335.Win6335.DB6335 {
+namespace Win6335.DB6335 {
     [Table(Name = "xslist")]
     class Student6335 {
         public Student6335() {

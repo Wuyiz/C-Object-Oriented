@@ -118,22 +118,22 @@ namespace Win6335 {
         }
 
         private void button21_Click(object sender, EventArgs e) {
-            Win6335.FileIO6335.EncodingForm6335 encoding = new Win6335.FileIO6335.EncodingForm6335();
+            FileIO6335.EncodingForm6335 encoding = new FileIO6335.EncodingForm6335();
             encoding.Show();
         }
 
         private void button22_Click(object sender, EventArgs e) {
-            Win6335.FileIO6335.FileSystemWatcherForm6335 fileSystemWatcher = new Win6335.FileIO6335.FileSystemWatcherForm6335();
+            FileIO6335.FileSystemWatcherForm6335 fileSystemWatcher = new FileIO6335.FileSystemWatcherForm6335();
             fileSystemWatcher.Show();
         }
 
         private void button23_Click(object sender, EventArgs e) {
-            Win6335.DB6335.ADONETForm6335 aDONET = new Win6335.DB6335.ADONETForm6335();
+            DB6335.ADONETForm6335 aDONET = new DB6335.ADONETForm6335();
             aDONET.Show();
         }
 
         private void button24_Click(object sender, EventArgs e) {
-            Win6335.DB6335.Linq2SqlForm6335 linq2Sql = new Win6335.DB6335.Linq2SqlForm6335();
+            DB6335.Linq2SqlForm6335 linq2Sql = new DB6335.Linq2SqlForm6335();
             linq2Sql.Show();
         }
     }

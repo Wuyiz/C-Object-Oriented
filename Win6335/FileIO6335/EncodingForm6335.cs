@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
-namespace Win6335.Win6335.FileIO6335 {
+namespace Win6335.FileIO6335 {
     public partial class EncodingForm6335 : Form {
         public EncodingForm6335() {
             InitializeComponent();

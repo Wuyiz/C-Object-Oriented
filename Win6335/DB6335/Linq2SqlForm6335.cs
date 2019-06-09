@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Win6335.Win6335.DB6335 {
+namespace Win6335.DB6335 {
     public partial class Linq2SqlForm6335 : Form {
         DataContext db;
         public Linq2SqlForm6335() {

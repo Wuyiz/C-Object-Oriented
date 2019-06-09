@@ -160,35 +160,35 @@
     <Compile Include="Win6335\DateTimeForm.Designer.cs">
       <DependentUpon>DateTimeForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Win6335\DB6335\ADONETForm6335.cs">
+    <Compile Include="DB6335\ADONETForm6335.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Win6335\DB6335\ADONETForm6335.Designer.cs">
+    <Compile Include="DB6335\ADONETForm6335.Designer.cs">
       <DependentUpon>ADONETForm6335.cs</DependentUpon>
     </Compile>
-    <Compile Include="Win6335\DB6335\Linq2SqlForm6335.cs">
+    <Compile Include="DB6335\Linq2SqlForm6335.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Win6335\DB6335\Linq2SqlForm6335.Designer.cs">
+    <Compile Include="DB6335\Linq2SqlForm6335.Designer.cs">
       <DependentUpon>Linq2SqlForm6335.cs</DependentUpon>
     </Compile>
-    <Compile Include="Win6335\DB6335\Student6335.cs" />
+    <Compile Include="DB6335\Student6335.cs" />
     <Compile Include="Win6335\EditorForm6335.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Win6335\EditorForm6335.Designer.cs">
       <DependentUpon>EditorForm6335.cs</DependentUpon>
     </Compile>
-    <Compile Include="Win6335\FileIO6335\EncodingForm6335.cs">
+    <Compile Include="FileIO6335\EncodingForm6335.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Win6335\FileIO6335\EncodingForm6335.Designer.cs">
+    <Compile Include="FileIO6335\EncodingForm6335.Designer.cs">
       <DependentUpon>EncodingForm6335.cs</DependentUpon>
     </Compile>
-    <Compile Include="Win6335\FileIO6335\FileSystemWatcherForm6335.cs">
+    <Compile Include="FileIO6335\FileSystemWatcherForm6335.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Win6335\FileIO6335\FileSystemWatcherForm6335.Designer.cs">
+    <Compile Include="FileIO6335\FileSystemWatcherForm6335.Designer.cs">
       <DependentUpon>FileSystemWatcherForm6335.cs</DependentUpon>
     </Compile>
     <Compile Include="Win6335\ListForm6335.cs">
@@ -267,19 +267,19 @@
     <EmbeddedResource Include="Win6335\DateTimeForm.resx">
       <DependentUpon>DateTimeForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Win6335\DB6335\ADONETForm6335.resx">
+    <EmbeddedResource Include="DB6335\ADONETForm6335.resx">
       <DependentUpon>ADONETForm6335.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Win6335\DB6335\Linq2SqlForm6335.resx">
+    <EmbeddedResource Include="DB6335\Linq2SqlForm6335.resx">
       <DependentUpon>Linq2SqlForm6335.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Win6335\EditorForm6335.resx">
       <DependentUpon>EditorForm6335.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Win6335\FileIO6335\EncodingForm6335.resx">
+    <EmbeddedResource Include="FileIO6335\EncodingForm6335.resx">
       <DependentUpon>EncodingForm6335.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Win6335\FileIO6335\FileSystemWatcherForm6335.resx">
+    <EmbeddedResource Include="FileIO6335\FileSystemWatcherForm6335.resx">
       <DependentUpon>FileSystemWatcherForm6335.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Win6335\ListForm6335.resx">

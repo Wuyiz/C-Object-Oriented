@@ -1,4 +1,4 @@
-﻿namespace Win6335.Win6335.FileIO6335 {
+﻿namespace Win6335.FileIO6335 {
     partial class EncodingForm6335 {
         /// <summary>
         /// Required designer variable.

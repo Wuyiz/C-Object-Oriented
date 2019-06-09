@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Win6335.Win6335.FileIO6335 {
+namespace Win6335.FileIO6335 {
     public partial class FileSystemWatcherForm6335 : Form {
         //定义监视成员变量
         FileSystemWatcher watcher = new FileSystemWatcher();

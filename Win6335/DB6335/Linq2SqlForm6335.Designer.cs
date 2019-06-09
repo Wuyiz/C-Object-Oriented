@@ -1,4 +1,4 @@
-﻿namespace Win6335.Win6335.DB6335 {
+﻿namespace Win6335.DB6335 {
     partial class Linq2SqlForm6335 {
         /// <summary>
         /// Required designer variable.
